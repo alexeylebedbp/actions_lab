@@ -1,0 +1,12 @@
+name: Simple Action
+on: [push]
+jobs:
+    echo-script:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo a string
+                run: echo "Hopa World"
+            - name: multiline script 
+                run: |
+                node -v 
+                npm -v
