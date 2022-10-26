@@ -15,7 +15,7 @@ jobs:
               uses: actions/hello-world-javascript-action@v1
               with: 
                 who-to-greet: Vasiliy
-            - name: List Files 
+            - name: ENV STUFF 
               run: |
                 pwd
                 ls -a
@@ -25,3 +25,5 @@ jobs:
                 echo "${{ github.token }}"
                 # git clone git@github:$GITHUB_REPOSITORY
                 # git checkout $GITHUB_SHA
+            - name: Checkout 
+              uses: actions/checkout@v1           
