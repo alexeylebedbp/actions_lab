@@ -10,3 +10,8 @@ jobs:
               run: |
                 node -v 
                 npm -v
+            - name: Simple JS Action
+              id: greet 
+              uses: actions/hello-world-javascript-action@v1
+              with: 
+                who-to-greet: John
